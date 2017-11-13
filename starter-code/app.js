@@ -12,7 +12,7 @@ const app = express();
 // Controllers
 const siteController = require('./routes/siteController');
 const User = require('./models/user');
-const User = require('./models/course');
+const Course = require('./models/course');
 
 // Mongoose configuration
 mongoose.connect('mongodb://localhost/ibi-ironhack');

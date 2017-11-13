@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+const siteController = require('./routes/siteController');
+
 const userSchema = new Schema({
   username: String,
   name: String,
@@ -9,8 +11,8 @@ const userSchema = new Schema({
   role: String
 }, {
   timestamps: {
-    createdAt: 'created_at',
-    updatedAt: 'updated_at'
+    createdAt: "created_at",
+    updatedAt: "updated_at"
   }
 });
 

@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+const siteController = require('./routes/siteController');
+
 const courseSchema = new Schema([{
     name: String,
     startingDate: Date,
@@ -9,8 +11,8 @@ const courseSchema = new Schema([{
     available: Boolean
 }, {
     timestamps: {
-        createdAt: 'created_at',
-        updatedAt: 'updated_at'
+        createdAt: "created_at",
+        updatedAt: "updated_at"
     }
 }]);
 
