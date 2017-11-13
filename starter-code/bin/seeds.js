@@ -20,42 +20,39 @@ const boss = new User({
   password: encryptedPass,
   role: 'Boss'
 });
-const courses = [{
+
+
+const courses = new Course[{
   name: 'Introduction to Ruby on Rails',
   startingDate: new Date('2017-03-01'),
   endDate: new Date('2017-04-01'),
   level: 'Beginner',
   available: true
-},
-{
+}, {
   name: 'Ruby on Rails Advanced',
   startingDate: new Date('2017-02-01'),
   endDate: new Date('2017-03-27'),
   level: 'Advanced',
   available: true
-},
-{
+}, {
   name: 'Angular 2',
   startingDate: new Date('2017-04-15'),
   endDate: new Date('2017-06-30'),
   level: 'Advanced',
   available: true
-},
-{
+}, {
   name: 'MongoDB',
   startingDate: new Date('2017-04-04'),
   endDate: new Date('2017-05-04'),
   level: 'Advanced',
   available: true
-},
-{
+}, {
   name: 'Express Introduction',
   startingDate: new Date('2017-03-01'),
   endDate: new Date('2017-04-01'),
   level: 'Beginner',
   available: true
-}
-];
+}]();
 
 User.create(boss, (err, user) => {
   if (err) {

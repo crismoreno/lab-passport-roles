@@ -5,11 +5,14 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const ensureLogin = require('connect-ensure-login');
 
 const app = express();
 
 // Controllers
 const siteController = require('./routes/siteController');
+const User = require('./models/user');
+const User = require('./models/course');
 
 // Mongoose configuration
 mongoose.connect('mongodb://localhost/ibi-ironhack');
